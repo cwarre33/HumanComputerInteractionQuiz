@@ -1,0 +1,96 @@
+/* Define deep ocean color scheme */
+:root {
+    --deep-ocean-dark-blue: #001f3f;
+    --deep-ocean-blue: #0074D9;
+    --deep-ocean-light-blue: #7FDBFF;
+    --deep-ocean-white: #FFFFFF;
+    --deep-ocean-green: #2ECC40;
+}
+
+/* Apply colors and font to the body */
+body {
+    font-family: 'Pacifico', cursive; /* Ocean-themed font */
+    background-color: var(--deep-ocean-dark-blue);
+    color: var(--deep-ocean-white);
+    margin: 0 auto;
+    padding: 40px; /* Increased padding for better spacing */
+    text-align: center;
+    font-size: 16px; /* Increased font size for readability */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+
+/* Style the top bar */
+#top-bar {
+    background-color: var(--deep-ocean-blue);
+    padding: 15px; /* Adjust padding as needed */
+    text-align: center; /* Center align text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the quiz and score containers */
+#quiz-container,
+#score-container {
+    background-color: var(--deep-ocean-blue);
+    border-radius: 10px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin for spacing between containers */
+    color: var(--deep-ocean-white);
+}
+
+/* Hide elements */
+.hidden {
+    display: none;
+}
+
+/* Style the buttons with shimmering/glowing effect */
+button {
+    background-color: var(--deep-ocean-green);
+    color: var(--deep-ocean-white);
+    padding: 15px 30px; /* Increased padding for better touch targets */
+    margin-top: 20px; /* Increased margin for better spacing */
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for readability */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--deep-ocean-light-blue);
+    box-shadow: 
+        0 0 10px var(--deep-ocean-light-blue),
+        0 0 20px var(--deep-ocean-light-blue),
+        0 0 30px var(--deep-ocean-light-blue);
+}
+
+#hint-container {
+    background-color: var(--deep-ocean-blue);
+    border-radius: 10px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin for spacing between containers */
+    color: var(--deep-ocean-white);
+}
+
+/* Style the terms and definitions containers */
+.terms-container,
+.defs-container {
+    display: flex;
+
+    justify-content: space-around;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+/* Style the draggable items */
+.draggable-item {
+    background-color: var(--deep-ocean-light-blue);
+    padding: 15px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    cursor: grab;
+    margin: 10px; /* Increased margin for better spacing */
+    color: var(--deep-ocean-dark-blue);
+}
+
